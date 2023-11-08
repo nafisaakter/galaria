@@ -1,0 +1,20 @@
+.image-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 16px;
+}
+
+.image-card{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.image-card.featured{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+img{
+  width: 100%;
+    object-fit: cover;
+}
